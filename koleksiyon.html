@@ -1,0 +1,333 @@
+  <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design & Freedom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="tasar.css">
+	<link rel="stylesheet" href="tasar.css">
+	
+	
+</head>
+<body class="collection-page-body">
+
+	<nav class="navbar">
+		<a href="ilk.html" class="logo">
+			<img src="popin_shop.png" alt="Popin Shop Logo" class="main-logo" >
+		</a>
+		
+		<div class="nav_links" >
+			<a href="tasarimcilar.html">TASARIMCILAR</a>
+			<a href="is_birlikleri.html">İŞ BİRLİKLERİ</a>
+			<a href="etkinlikler.html">ETKİNLİKLER</a>
+			<a href="blog.html">BLOG</a>
+			
+			
+		<div class="sepet">
+			<a href="sepet.html">SEPET</a>
+			<div class="sepet-badge-wrapper">
+				<span class="sepet-card"></span>
+			</div>
+		</div>
+			
+			
+			<a href= "iletisim.html">İLETİŞİME GEÇ</a>
+		</div>
+	</nav>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<main class="collection-page">
+		<header class="collection-header">
+			<h1 id="designer-name">Koleksiyon</h1>
+			<p>Seçkin tasarımların hikayesini keşfedin.</p>
+		</header>
+	
+		<section class="products-grid" id="products-container">
+		</section>
+	
+	</main>
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<section class="stat">
+	<div class="stat-item"><span>TASARIMCILAR</span>150+</div>
+	<div class="stat-item"><span>SATIŞLAR</span>500+</div>
+	<div class="stat-item"><span>KOLEKSİYONLAR</span>20B+</div>
+	<div class="stat-item"><span>DEFİLELER</span>50+</div>
+</section>
+
+	
+	
+	
+
+	
+	
+
+
+<section class="new">
+	<div class="new_content">
+		<h2>KOLEKSİYONLARDAN HABERDAR OLUN</h2>
+		<p> En yeni tarasımlar ve özel indirimler için listemize kaatılın.</p>
+		<form class="eform">
+			<input type="email" placeholder="E-posta adresinizi yazın..." required>
+			<button type="submit">KAYDOL </button>
+		</form>
+	</div>
+</section>
+
+
+
+
+
+
+
+<footer class="main-footer">
+	<div class="footer-container">
+	
+		<div class="footer-col">
+		<h4>KURUMSAL</h4>
+		<ul>
+			<li><a href="#">HAKKIMIZDA</a></li>
+			<li><a href="#">SÜRDÜRÜLEBİLİRLİK</a></li>
+		</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div class="footer-col">
+	<h4>YARDIM</h4>
+		<ul>
+			<li><a href="#">KARGO & TESLİM</a></li>
+			<li><a href="#">İADE & DEĞİŞİM</a></li>
+			<li><a href="#">BEDEN REHBERİ</a></li>
+		</ul>
+		</div>
+		
+		
+
+		
+		
+		<div class="footer-col">
+			<h4>İLETİŞİM</h4>
+			<p>Email:info@popinshop.com</p>
+			<p>Telefon:+90 212 000 00 00</p>
+		</div>
+		
+		
+		
+		
+
+		
+		<div class="fotter-bottom">
+		<p>2024 Popin Shop. Tüm Hakları Saklıdır</p>
+		<div class="odeme-icons">
+            <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+            <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
+            <img src="https://img.icons8.com/color/48/000000/amex.png" alt="Amex">
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // 1. Ürün Veritabanımız (Normalde bu bilgiler sunucudan gelir)
+    const allProducts = [
+        { id: 1, designer: 'mara', name: 'Geri Dönüştürülmüş Bikini', price: '2.450 TL', img: 'mara1.jpg' },
+        { id: 2, designer: 'mara', name: 'Sürdürülebilir Elbise', price: '4.200 TL', img: 'mara2.jpg' },
+        { id: 3, designer: 'zimmermann', name: 'Çiçekli Bohem Mayo', price: '5.800 TL', img: 'zim1.jpg' },
+        { id: 4, designer: 'zimmermann', name: 'Dantel Detaylı Kaftan', price: '7.150 TL', img: 'zim2.jpg' },
+        { id: 5, designer: 'hunza-g', name: 'Crinkle Dokulu Bikini', price: '3.200 TL', img: 'hunza1.jpg' },
+        { id: 6, designer: 'orlebar', name: 'Keskin Hatlı Deniz Şortu', price: '2.900 TL', img: 'orlebar1.jpg' }
+    ];
+
+    // 2. URL'den hangi tasarımcının seçildiğini anla
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedDesigner = urlParams.get('designer');
+
+    // 3. Sayfadaki başlıkları ve ürünleri güncelle
+    const container = document.getElementById('products-container');
+    const title = document.getElementById('designer-name');
+
+    if (selectedDesigner) {
+        // İsimleri güzelleştirelim
+        const names = {
+            'mara': 'Mara Hoffman',
+            'zimmermann': 'Zimmermann',
+            'hunza-g': 'Georgiana Huddart',
+            'orlebar': 'Orlebar Brown'
+        };
+        
+        title.innerText = names[selectedDesigner] || "Koleksiyon";
+
+        // Filtrele ve ekrana bas
+        const filtered = allProducts.filter(p => p.designer === selectedDesigner);
+        
+        filtered.forEach(product => {
+            container.innerHTML += `
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="${product.img}" alt="${product.name}">
+                       <button class="add-to-cart" onclick="addToCart(${product.id})">SEPETE EKLE</button>
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <p>${product.price}</p>
+                    </div>
+                </div>
+            `;
+        });
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+function addToCart(productId) {
+    const product = allProducts.find(p => p.id === productId);
+    let cart = JSON.parse(localStorage.getItem('popin_cart')) || [];
+    
+    cart.push(product);
+    localStorage.setItem('popin_cart', JSON.stringify(cart));
+    
+    // SADECE sayıyı güncelle
+    updateCartCount();
+}
+
+function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem('popin_cart')) || [];
+    const badgeWrapper = document.querySelector('.sepet-badge-wrapper');
+    const cartCountElement = document.querySelector('.sepet-card');
+
+    if (badgeWrapper && cartCountElement) {
+        if (cart.length > 0) {
+            badgeWrapper.style.display = 'flex'; // Sayıyı göster ve ortala
+            cartCountElement.innerText = cart.length;
+        } else {
+            badgeWrapper.style.display = 'none'; // Sepet boşsa gizle
+        }
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

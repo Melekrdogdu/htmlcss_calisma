@@ -1,0 +1,292 @@
+   <html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim | Popin Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="tasar.css">
+	<link rel="stylesheet" href="tasar.css">
+	
+	
+</head>
+<body class="cart-sepet-page-body">
+
+	<nav class="navbar">
+		<a href="ilk.html" class="logo">
+			<img src="popin_shop.png" alt="Popin Shop Logo" class="main-logo" >
+		</a>
+		
+		<div class="nav_links" >
+			<a href="tasarimcilar.html">TASARIMCILAR</a>
+			<a href="is_birlikleri.html">İŞ BİRLİKLERİ</a>
+			<a href="etkinlikler.html">ETKİNLİKLER</a>
+			<a href="blog.html">BLOG</a>
+			
+			
+		<div class="sepet">
+			<a href="sepet.html">SEPET</a>
+			<div class="sepet-badge-wrapper">
+				<span class="sepet-card"></span>
+			</div>
+		</div>
+			
+			
+			<a href= "iletisim.html">İLETİŞİME GEÇ</a>
+		</div>
+	</nav>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<main class="cart-page">
+		<div class="cart-container">
+			<h1>ALIŞVERİŞ SEPETİ</h1>
+			<div class="cart-wrapper">
+				<div class="cart-items" id="cart-items-container">
+					<p class="empty-msg">Sepetiniz şu an boş</p>
+				</div>
+				
+				<div class="cart-summary">
+					<h3>SİPARİŞ ÖZETİ</h3>
+					
+					<div class="summary-row">
+						<span>Ara Toplam</span>
+						<span id="subtotal">0 TL</span>
+					</div>
+					
+					<div class="summary-row">
+						<span>Kargo</span>
+						<span>Ücretsiz</span>
+					</div>
+					
+					<hr>
+					
+					<div class="summary-row total">
+						<span>TOPLAM</span>
+						<span id="final-total">0 TL</span>
+					</div>
+					<button class="checkout-btn">ÖDEMEYE GEÇ</button>
+					
+				</div>	
+			</div>	
+		</div>
+			
+		
+	</main>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<section class="stat">
+	<div class="stat-item"><span>TASARIMCILAR</span>150+</div>
+	<div class="stat-item"><span>SATIŞLAR</span>500+</div>
+	<div class="stat-item"><span>KOLEKSİYONLAR</span>20B+</div>
+	<div class="stat-item"><span>DEFİLELER</span>50+</div>
+</section>
+
+	
+	
+	
+
+	
+	
+
+
+<section class="new">
+	<div class="new_content">
+		<h2>KOLEKSİYONLARDAN HABERDAR OLUN</h2>
+		<p> En yeni tarasımlar ve özel indirimler için listemize kaatılın.</p>
+		<form class="eform">
+			<input type="email" placeholder="E-posta adresinizi yazın..." required>
+			<button type="submit">KAYDOL </button>
+		</form>
+	</div>
+</section>
+
+
+
+
+
+
+
+<footer class="main-footer">
+	<div class="footer-container">
+	
+		<div class="footer-col">
+		<h4>KURUMSAL</h4>
+		<ul>
+			<li><a href="#">HAKKIMIZDA</a></li>
+			<li><a href="#">SÜRDÜRÜLEBİLİRLİK</a></li>
+		</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div class="footer-col">
+	<h4>YARDIM</h4>
+		<ul>
+			<li><a href="#">KARGO & TESLİM</a></li>
+			<li><a href="#">İADE & DEĞİŞİM</a></li>
+			<li><a href="#">BEDEN REHBERİ</a></li>
+		</ul>
+		</div>
+		
+		
+
+		
+		
+		<div class="footer-col">
+			<h4>İLETİŞİM</h4>
+			<p>Email:info@popinshop.com</p>
+			<p>Telefon:+90 212 000 00 00</p>
+		</div>
+		
+		
+		
+		
+
+		
+		<div class="fotter-bottom">
+		<p>2024 Popin Shop. Tüm Hakları Saklıdır</p>
+		<div class="odeme-icons">
+            <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+            <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
+            <img src="https://img.icons8.com/color/48/000000/amex.png" alt="Amex">
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function displayCart() {
+        const cartItemsContainer = document.getElementById('cart-items-container');
+        let cart = JSON.parse(localStorage.getItem('popin_cart')) || [];
+        
+        if (cart.length === 0) {
+            cartItemsContainer.innerHTML = '<p>Sepetiniz şu an boş.</p>';
+            return;
+        }
+
+        cartItemsContainer.innerHTML = ''; // Temizle
+        let total = 0;
+
+        cart.forEach((item, index) => {
+            total += parseInt(item.price.replace(/[^0-9]/g, '')); // Fiyatı sayıya çevir
+            
+            cartItemsContainer.innerHTML += `
+                <div class="cart-item">
+                    <img src="${item.img}" alt="${item.name}">
+                    <div class="cart-item-info">
+                        <h3>${item.name}</h3>
+                        <p>${item.price}</p>
+                        <button onclick="removeItem(${index})" style="background:none; border:none; color:red; cursor:pointer; font-size:12px; padding:0;">Kaldır</button>
+                    </div>
+                </div>
+            `;
+        });
+
+        document.getElementById('subtotal').innerText = total.toLocaleString() + ' TL';
+        document.getElementById('final-total').innerText = total.toLocaleString() + ' TL';
+    }
+
+    function removeItem(index) {
+        let cart = JSON.parse(localStorage.getItem('popin_cart')) || [];
+        cart.splice(index, 1); // Seçilen ürünü diziden çıkar
+        localStorage.setItem('popin_cart', JSON.stringify(cart));
+        displayCart(); // Sayfayı güncelle
+    }
+
+    // Sayfa açıldığında sepeti göster
+    displayCart();
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
